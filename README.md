@@ -1,18 +1,19 @@
 # ⚡ Electricity Bill Calculator
 
-A simple **CLI-based Electricity Bill Calculator** developed in Python to practice programming fundamentals and real-world conditional logic.
+A simple **CLI-based Electricity Bill Calculator** developed in Python as part of my Python revision and practice.
 
-The program takes electricity units consumed as input and calculates the estimated electricity bill using a **slab-based pricing system**. It also calculates applicable taxes/charges and displays the user's billing status.
+The program takes electricity units consumed as input and calculates the estimated electricity bill using a **slab-based unit rate system**. It also calculates GST, adds the PTV fee, determines the consumer's protection status, and displays the final bill.
 
 ## 🚀 Features
 
-* 🔢 Takes electricity consumption in units
-* ⚡ Calculates charges using a slab-based pricing system
-* 💰 Calculates additional taxes/charges
-* 📊 Displays a breakdown of the calculated bill
-* 🛡️ Displays the applicable protection/status information
+* 🔢 Accepts electricity consumption in kWh
+* ⚡ Applies a slab-based electricity rate
+* 🛡️ Determines **Protected / Not Protected** status
+* 💰 Calculates energy charges
+* 🧾 Calculates **17% GST**
+* 💵 Adds a **PTV fee**
+* 📊 Displays a clear bill breakdown
 * 🖥️ Simple Command-Line Interface (CLI)
-* 🐍 Built using Python fundamentals
 
 ## 🛠️ Technologies Used
 
@@ -20,7 +21,8 @@ The program takes electricity units consumed as input and calculates the estimat
 * Conditional statements
 * User input/output
 * Arithmetic operations
-* Variables and basic programming logic
+* Variables
+* Basic programming logic
 
 ## ▶️ How to Run
 
@@ -44,17 +46,47 @@ Run the program:
 python ElectricityBillCalculator.py
 ```
 
+## 💻 Example
+
+```text
+===ELECTRICITY BILL CALCULATOR===
+Enter Units Consumed:150
+
+
+======Electricity Bill======
+Energy Consumed in kWh = 150
+Rate per kWh = 28.91
+Energy Charges = 4336.5
+gst 17% = 737.205
+PTV fee= 700
+===============================
+Status: Protected
+===============================
+Total Bill= 5773.705
+===============================
+```
+
 ## 📌 Project Purpose
 
-This project was created as part of my **Python revision**. Instead of solving only basic programming exercises, I wanted to apply Python fundamentals to a practical problem based on electricity billing.
+I created this project as part of my **Python revision and practice**.
 
-It helped me practice conditional logic, calculations, user input handling, and structuring a small command-line application.
+Instead of only solving basic programming exercises, I wanted to apply Python fundamentals to a practical problem based on electricity billing.
+
+Through this project, I practiced:
+
+* Conditional logic
+* User input handling
+* Arithmetic calculations
+* Slab-based pricing logic
+* Basic program structure
+* Command-line application development
 
 ## 🔮 Future Improvements
 
 * Add a graphical user interface (GUI)
-* Add support for different consumer categories
-* Improve bill breakdown and formatting
+* Improve bill formatting and rounding
+* Add different consumer categories
+* Add more detailed tariff calculations
 * Add monthly bill history
 * Add automated testing
 
